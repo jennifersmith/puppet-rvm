@@ -1,7 +1,7 @@
 Facter.add("rvm_installed") do
-  rvm_binary = "/usr/local/rvm/bin/rvm"
+  rvm_folder = "/Users/jsmith/.rvm"
 
   setcode do
-    File.exists? rvm_binary
+    File.exists? rvm_folder
   end
 end
